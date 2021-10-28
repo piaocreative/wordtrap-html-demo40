@@ -1,0 +1,205 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Category
+-----------------------------------------------------------------*/
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	margin-bottom: $spacer * 1.8;
+	position: relative;
+
+	.product-image {
+		position: relative;
+		margin-bottom: 1.125rem;
+
+		> a:nth-of-type(2) {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+
+	.product-price {
+		color: #414141;
+		font-family: $heading-font;
+		font-size: 1.56rem;
+		font-weight: 500;
+		line-height: 1;
+
+		del {
+			font-size: 1rem;
+			color: #414141;
+			font-weight: 400;
+			font-family: $heading-font;
+			padding-left: 1.5rem;
+		}
+	}
+
+	.product-title {
+		color: $heading-color;
+		font-family: $heading-font;
+		font-size: 2.18rem;
+		font-weight: 300;
+		line-height: 1;
+		margin-bottom: $spacer * 1.5;
+	}
+
+	.product-info{
+		font-family: $body-font;
+		font-weight: 400;
+		font-size: 0.875rem;
+		line-height: 1.25;
+		margin-bottom: 1.5rem;
+	}
+
+	.product-btn {
+		display: none;
+	}
+
+	&:hover {
+		.product-image {
+			position: relative;
+			img {
+				opacity: 0.5;
+			}
+
+			.product-btn {
+				display: block;
+				background-color: black;
+				color: white;
+				font-size: 0.75rem;
+				font-family: $body-font;
+				font-weight: 500;
+				position: absolute;
+				right: 1px;
+				top: 50%;
+				transform: translateY(-50%);
+				left: calc(50%);
+				transform: translateX(-50%);
+				padding: 1rem 2.25rem;
+				width: fit-content;
+			}
+		}
+		
+		.product-title {
+			border-bottom: 1px solid #414141;
+			width: fit-content;
+		}
+	}
+
+	.add-to-wishlist {
+		position: absolute;
+		color: #c8c8c8;
+		right: 2rem;
+		top: 1.5rem;
+		border: 1px solid #c8c8c8;
+		border-radius: 50%;
+		width: 2rem;
+		height: 2rem;
+		text-align: center;
+		background-color: transparent;
+
+		i {
+			font-size: 1rem;
+			line-height: 2rem;
+		}
+	}
+
+	.onsale {
+		background-color: #e20a0a;
+		color: white;
+		font-size: 0.65rem;
+		font-weight: 500;
+		font-family: $heading-font;
+		line-height: 2rem;
+		text-transform: uppercase;
+		// padding: $spacer $spacer * 5;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		position: absolute;
+		left: 2rem;
+		top: 1.5rem;
+		z-index: 2;
+		text-align: center;
+		
+		@include transition(all 0.3s ease-in-out);
+	}
+}
+
+/* Ads
+-----------------------------------------------------------------*/
+.ads {
+	position: relative;
+	display: block;
+
+	.ads-bg {
+		width: 100%;
+
+		img {
+			width: 100%;
+			height: auto;			
+		}
+	}
+
+	.ads-body {
+		width: 50%;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-right: 4rem;
+		margin-bottom: 1.875rem;
+		
+		@include media-breakpoint-up(sm) {
+			margin-bottom: 3.875rem;
+		}
+
+		p {
+			font-size: 0.75rem;
+			font-family: $body-font;
+			
+		}
+	}
+
+	&.ads1 {
+		.ads-body {
+			padding: 5rem;
+
+			@include media-breakpoint-down(xxl) {
+				padding: 4rem;
+			}
+
+			@include media-breakpoint-down(lg) {
+				h3 {
+					
+				}
+			}
+		}		
+	}
+
+	.left {
+		left: 0;
+		margin-left: 2.25rem;
+	}
+}

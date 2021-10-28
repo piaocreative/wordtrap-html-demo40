@@ -1,0 +1,40 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Shortcodes: headings.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Heading Styles
+-----------------------------------------------------------------*/
+
+
+/* Heading Block - with Subtitle
+-----------------------------------------------------------------*/
+
+.heading-block { 
+	padding-bottom: $spacer * 2; 
+	position: relative;
+	display: flex;
+	align-items: baseline;
+
+	.title {		
+		display: block;
+		font-family: $heading-font;
+		font-weight: 200;
+		line-height: 1;
+		margin-bottom: 0;
+		font-size: 3.125rem;
+	}
+
+	.sub-title {
+		font-weight: 200;
+		font-family: $heading-font;
+		font-size: 1rem;
+		color: $light;
+		border-bottom: 1px solid $light;
+		width: fit-content;
+		margin-left: 2.5rem;
+	}
+}

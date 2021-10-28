@@ -1,0 +1,67 @@
+
+/* ----------------------------------------------------------------
+
+	blog.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Blog
+-----------------------------------------------------------------*/
+
+.post {
+	position: relative;
+	margin-bottom: $spacer * 4;
+}
+
+.post-thumbnail {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+
+	a {
+		display: block;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.post-content {
+	position: relative;
+	padding: $spacer * 2.1875 0 0;
+	margin-bottom: $spacer * 1.875;
+
+	p {
+		font-size: $h6-font-size;
+		color: #414141;
+		font-weight: 400;
+		margin-bottom: 0;
+	}
+}
+
+.entry-title {
+	h4 {
+		font-size: 35px;
+		line-height: 45px;
+		color: #414141;
+		font-weight: 200;
+		font-family: $heading-font;
+		margin-bottom: 1rem;
+	}
+}
+
+.entry-meta {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 0.75rem;
+	line-height: 1.375;
+	color: #414141;
+	font-weight: 400;
+	font-family: $body-font;
+}

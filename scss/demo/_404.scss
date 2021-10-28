@@ -1,0 +1,30 @@
+
+.error-404 {
+	padding-top: 13rem;
+
+	p {
+		color: white;
+		font-size: 1.875rem;
+		font-family: $heading-font;
+		font-weight: 400;
+		line-height: 2.5rem;
+		margin-bottom: 0;
+	}
+	
+	h1 {
+		@include media-breakpoint-up(xl) {
+			font-size: 40.56rem;
+		}
+		font-weight: 200;
+		font-family: $heading-font;
+		line-height: 1;
+		color: white;
+		margin-bottom: 0;
+		font-size: 20rem;
+	}
+
+	.btn {
+		background-color: white;
+		color: black;
+	}
+}

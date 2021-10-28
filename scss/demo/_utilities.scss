@@ -1,0 +1,71 @@
+/*-----------------------------------------------------------------------------------
+	utilities.scss
+-----------------------------------------------------------------------------------*/
+
+
+//-------------------- Fonts --------------------//
+
+// Font Family
+.body-font { font-family: $body-font !important; }
+.heading-font { font-family: $heading-font !important; }
+
+// Font Weight
+.fw-semi-bold { font-weight: 600 !important; }
+.fw-black { font-weight: 900 !important; }
+
+// Text Color
+.text-black { color: #000 !important; }
+.text-red { color: #e20a0a !important; }
+.text-light { color: #414141;}
+
+// background-color
+.bg-white { background-color: white !important; }
+.bg-black { background-color: black !important; }
+.bg-light { background-color: $light; }
+
+//font size
+.fs-sm { font-size: 0.75rem !important; }
+.fs-md { font-size: 1.875rem; }
+.container-fluid.padding-left {
+	width: 100%;
+	@include media-breakpoint-up(sm) { padding-left: calc(50% - 540px / 2); }
+	@include media-breakpoint-up(md) { padding-left: calc(50% - 720px / 2); }
+	@include media-breakpoint-up(lg) { padding-left: calc(50% - 960px / 2); }
+	@include media-breakpoint-up(xl) { padding-left: calc(50% - 1140px / 2); }
+	@include media-breakpoint-up(xxl) { padding-left: calc(50% - 1320px / 2); }
+}
+
+//-------------------- Image --------------------//
+
+img {
+	&.img-full {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+//-------------------- Section ------------------//
+
+.section {
+	position: relative;
+	padding-top: $section-spacer;
+	padding-bottom: $section-spacer;
+}
+
+.section-padding-top {
+	padding-top: $section-spacer;
+}
+
+.section-padding-bottom {
+	padding-bottom: $section-spacer;
+}
+
+.section-margin-top {
+	margin-top: $section-spacer;
+}
+
+.section-margin-bottom {
+	margin-bottom: $section-spacer;
+}

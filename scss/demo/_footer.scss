@@ -1,0 +1,52 @@
+
+/* ----------------------------------------------------------------
+
+	footer.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for footer. Thanks!
+-----------------------------------------------------------------*/
+
+#footer {
+	position: relative;
+	background-color: black;
+
+	p {
+		font-size: $h6-font-size;
+		color: #8c8c8c;
+		font-weight: 400;
+		font-family: $body-font;
+	}
+
+}
+
+#footer-main {
+	padding-top: 3.18rem;
+	padding-bottom: 3.18rem;
+}
+
+#footer-bottom {
+	padding-top: 3rem;
+	padding-bottom: 1.6rem;
+}
+
+#copyrights {
+	font-size: $h6-font-size;
+	color: #8c8c8c;
+	font-weight: 400;
+	font-family: $body-font;
+	line-height: 1;
+	z-index: 1;	
+	margin-bottom: 2rem;
+}
+
+.footer-line {
+	border-bottom: 2px solid #151515;
+}	

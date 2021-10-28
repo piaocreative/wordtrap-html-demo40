@@ -1,0 +1,132 @@
+
+/* ----------------------------------------------------------------
+
+	widgets.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Widgets
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for widgets. Thanks!
+-----------------------------------------------------------------*/
+
+
+.widget {
+	position: relative;
+
+	.widget-title {
+		font-size: $h6-font-size;
+		color: #ffffff;
+		font-weight: 400;
+		font-family: $body-font;
+		margin-bottom: $spacer * 1.25;
+	}	
+
+	// Widget - Social
+	&.widget-social {
+		.social-icons {
+			li {
+				padding: 0 1rem;
+				&:last-child {
+					padding-right: 0;
+				}
+		
+				a {
+					color: white;
+					display: inline-block;
+					line-height: 1.8125rem;
+					vertical-align: middle;
+					text-align: center;
+
+					@include transition(all 0.3s ease-in-out);
+		
+					i {
+						vertical-align: top;
+						line-height: 1.8125rem;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			li {
+				a {
+					font-size: $h6-font-size;
+					color: #ffffff;
+					font-weight: 400;
+					font-family: $body-font;	
+					margin-bottom: $spacer * 1.25;
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		.payments {
+			display: flex;
+			margin-bottom: 2rem;
+
+			.payment-icon {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: .75rem;
+				width: 4.125rem;
+				height: 2rem;
+				background-color: transparent;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+
+				@include border-radius(0.25rem);
+
+				&.visa {
+					background-image: url(../images/payments/visa.png);
+				}
+
+				&.paypal {
+					background-image: url(../images/payments/paypal.png);
+				}
+
+				&.mastercard {
+					background-image: url(../images/payments/mastercard.png);
+				}
+			}
+		}
+	}
+
+	// Widget - custom html
+	&.widget-custom-html {
+		.widget-content {
+			p, a {
+				color: white;
+				display: block;
+				line-height: 1;
+			}
+		}
+	}
+
+	// Widget - Subscribe
+	&.widget-subscribe {
+		.widget-content {
+			#widget-subscribe-form {
+				.form-control,
+				.btn {
+					@include border-radius(1.625rem);
+				}
+
+				.input-group-append {
+					margin-left: -$spacer * 2.875;
+				}
+			}
+		}
+	}
+}
