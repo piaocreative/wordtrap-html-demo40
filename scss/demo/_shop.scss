@@ -57,17 +57,12 @@
 	}
 
 	.product-title {
-		color: $heading-color;
-		font-family: $heading-font;
-		font-size: 2.18rem;
+		font-size: 2.1875rem;
 		font-weight: 300;
 		line-height: 1;
-		margin-bottom: $spacer * 1.5;
 	}
 
 	.product-info{
-		font-family: $body-font;
-		font-weight: 400;
 		font-size: 0.875rem;
 		line-height: 1.25;
 		margin-bottom: 1.5rem;
@@ -89,7 +84,6 @@
 				background-color: black;
 				color: white;
 				font-size: 0.75rem;
-				font-family: $body-font;
 				font-weight: 500;
 				position: absolute;
 				right: 1px;
@@ -150,56 +144,50 @@
 
 /* Ads
 -----------------------------------------------------------------*/
+
 .ads {
-	position: relative;
-	display: block;
+    position: relative;
+    display: block;
+	margin-bottom: 1.5rem;
 
-	.ads-bg {
-		width: 100%;
+    .ads-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
-		img {
-			width: 100%;
-			height: auto;			
-		}
-	}
+        .ads-bg-img {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-	.ads-body {
-		width: 50%;
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		margin-right: 4rem;
-		margin-bottom: 1.875rem;
-		
-		@include media-breakpoint-up(sm) {
-			margin-bottom: 3.875rem;
-		}
+    .ads-body {
+        position: relative;
+        z-index: 1;
 
-		p {
+		h6 {
 			font-size: 0.75rem;
-			font-family: $body-font;
-			
 		}
-	}
+    }
 
 	&.ads1 {
 		.ads-body {
-			padding: 5rem;
-
-			@include media-breakpoint-down(xxl) {
-				padding: 4rem;
-			}
-
-			@include media-breakpoint-down(lg) {
-				h3 {
-					
-				}
-			}
+			padding: 6rem 15rem  3rem;
 		}		
 	}
 
-	.left {
-		left: 0;
-		margin-left: 2.25rem;
+	&.ads2 {
+		.ads-body {
+			padding: 2.65rem 3rem;
+		}
 	}
 }

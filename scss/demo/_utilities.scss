@@ -23,9 +23,14 @@
 .bg-black { background-color: black !important; }
 .bg-light { background-color: $light; }
 
-//font size
-.fs-sm { font-size: 0.75rem !important; }
-.fs-md { font-size: 1.875rem; }
+
+.bg-cover {
+    position: relative;     
+	background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
 .container-fluid.padding-left {
 	width: 100%;
 	@include media-breakpoint-up(sm) { padding-left: calc(50% - 540px / 2); }

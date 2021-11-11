@@ -18,10 +18,9 @@
 
 #banner {
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-size: cover;
-    position: relative;   
-    height: 50rem;        
+    position: relative;     
 
     &.home-banner {
         background-image: url(../images/banner/banner_bg.png);
@@ -34,13 +33,28 @@
         padding-top: $spacer * 11.9;
         padding-bottom: $spacer * 3.25;
     }
+}
 
-    &.error-banner {
-        background-image: url(../images/404.png);
-        @include media-breakpoint-up(xl) {
-            height: 68.75rem; 
-        }
-        
-        position: relative;
-    }
+.breadcrumb {
+	ul {
+		display: flex;
+		align-items: center;
+		margin-top: $spacer * 1.25;
+		margin-bottom: $spacer * 2;
+	}
+
+	li {
+		line-height: 1;
+		padding-right: 0.25rem;
+		color:  #adadad;
+		font-size: $h6-font-size;
+	}
+
+	&:hover {
+		color: $heading-color;
+	}
+
+	span {
+		padding-right: 0.25rem;
+	}
 }

@@ -1,6 +1,11 @@
 
 .error-404 {
-	padding-top: 13rem;
+	position: relative;    
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: url(../images/404.png);
+	padding: 6.5rem 0;
 
 	p {
 		color: white;
@@ -12,19 +17,14 @@
 	}
 	
 	h1 {
-		@include media-breakpoint-up(xl) {
-			font-size: 40.56rem;
-		}
 		font-weight: 200;
-		font-family: $heading-font;
 		line-height: 1;
 		color: white;
 		margin-bottom: 0;
 		font-size: 20rem;
-	}
 
-	.btn {
-		background-color: white;
-		color: black;
+		@include media-breakpoint-up(xl) {
+			font-size: 40.56rem;
+		}
 	}
 }

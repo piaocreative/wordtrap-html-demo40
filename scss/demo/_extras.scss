@@ -14,79 +14,33 @@
 /* ----------------------------------------------------------------
 	Add here extra styles for demo. Thanks!
 -----------------------------------------------------------------*/
+.container-fluid {
+	overflow: hidden;
+}
 
-.section-bg {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+.filter-item {
+	font-size: 1.875rem;
 }
 
 .feedback {
-	background-image: url(../images/subscribe-bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-
-	@include media-breakpoint-up(xl) {
-		height: 26rem;
-	}
-
 	input {
 		background-color: transparent;
-    border-bottom: 1px solid white;
-    padding: .5rem;
-    border-radius: 0;
-    color: white;
+		border-bottom: 1px solid white;
+		padding: .5rem;
+		border-radius: 0;
+		color: white;
 	}
 
 	p {
-		@include media-breakpoint-up(xl) {
-			width: 65%;
-		}
-
 		font-size: 0.75rem;
 		line-height: 1.25rem;
 		color: #ffffff;
-		font-weight: 400;
-		font-family: $body-font;
 	}
 }
 
-.breadcrumb {
-	ul {
-		display: flex;
-		align-items: center;
-		margin-top: $spacer * 1.25;
-		margin-bottom: $spacer * 2;
-	}
-
-	li {
-		line-height: 1;
-		padding-right: 0.25rem;
-		color:  #adadad;
-		font-size: $h6-font-size;
-		font-weight: 400;
-		font-family: $body-font;
-	}
-
-	&:hover {
-		color: $heading-color;
-	}
-
-	span {
-		padding-right: 0.25rem;
-	}
-}
-
-
-.top {
+.about-more {
 	@include media-breakpoint-up(lg) {
+		position: relative;
 		top: -35%;
-	}
-}
-
-.position-xl-absolute {
-	@include media-breakpoint-up(xl) {
-		position: absolute;
 	}
 }

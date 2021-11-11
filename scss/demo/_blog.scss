@@ -46,14 +46,12 @@
 }
 
 .entry-title {
-	h4 {
-		font-size: 35px;
-		line-height: 45px;
-		color: #414141;
-		font-weight: 200;
-		font-family: $heading-font;
-		margin-bottom: 1rem;
-	}
+	font-size: 2.1875px;
+	line-height: 45px;
+	color: #414141;
+	font-weight: 200;
+	font-family: $heading-font;
+	margin-bottom: 1rem;
 }
 
 .entry-meta {
@@ -62,6 +60,4 @@
 	font-size: 0.75rem;
 	line-height: 1.375;
 	color: #414141;
-	font-weight: 400;
-	font-family: $body-font;
 }
